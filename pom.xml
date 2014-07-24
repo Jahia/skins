@@ -84,9 +84,9 @@
   <name>Jahia Skins</name>
   <description>This module provides skins to embed contents.</description>
   <scm>
-    <connection>scm:svn:https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/skins</connection>
-    <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/skins</developerConnection>
-    <url>https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/skins</url>
+    <connection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/skins</connection>
+    <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/skins</developerConnection>
+    <url>https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/skins</url>
   </scm>
   <repositories>
     <repository>
