@@ -52,7 +52,7 @@
         <version>7.1.0.0</version>
     </parent>
     <artifactId>skins</artifactId>
-	<version>7.1.1</version>
+	<version>7.1.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Skins</name>
     <description>This module provides skins to embed contents.</description>
@@ -60,7 +60,7 @@
         <connection>scm:git:git@github.com:Jahia/skins.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/skins.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/skins.git</url>
-      <tag>7_1_1</tag>
+      <tag>HEAD</tag>
   </scm>
     <repositories>
         <repository>
