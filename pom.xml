@@ -49,19 +49,26 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>7.1.0.0</version>
+        <version>7.5.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>skins</artifactId>
-	<version>7.1.2-SNAPSHOT</version>
+	<version>8.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Skins</name>
     <description>This module provides skins to embed contents.</description>
+
     <scm>
         <connection>scm:git:git@github.com:Jahia/skins.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/skins.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/skins.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <jahia-module-signature>MCwCFENXnJ9O/OTOV6LkNeh4f6afeotxAhQThFGvxiSYCzZB5kki7iQdHCnnbA==</jahia-module-signature>
+        <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
+    </properties>
+
     <repositories>
         <repository>
             <releases>
