@@ -48,6 +48,9 @@ import org.jahia.services.render.Resource;
 import org.apache.commons.lang.StringUtils;
 import org.jahia.services.render.filter.AbstractFilter;
 import org.jahia.services.render.filter.RenderChain;
+import org.jahia.services.render.filter.RenderFilter;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
 
 /**
  * SkinFilter
@@ -57,7 +60,17 @@ import org.jahia.services.render.filter.RenderChain;
  * If a skin parameter is found, the filter just adds it to the wrappers list.
  *
  */
+@Component(service = RenderFilter.class)
 public class SkinFilter extends AbstractFilter {
+
+    @Activate
+    public void activate() {
+        setDescription("Filter that add skins to the current resource.");
+        setPriority(45);
+        setApplyOnNodeTypes("jmix:droppableContent");
+        setSkipOnConfigurations("include,wrapper");
+        setSkipOnModes("studio");
+    }
     public String prepare(RenderContext renderContext, Resource resource, RenderChain chain) throws Exception {
         String skin = resource.getNode().hasProperty("j:skin")?resource.getNode().getPropertyAsString("j:skin"):"";
         if (!StringUtils.isEmpty(skin) && !skin.equals("none")) {
