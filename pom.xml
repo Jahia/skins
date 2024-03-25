@@ -49,10 +49,10 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>8.0.0.0</version>
+        <version>8.1.5.0</version>
     </parent>
     <artifactId>skins</artifactId>
-	<version>8.1.0-SNAPSHOT</version>
+	<version>8.2.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Skins</name>
     <description>This module provides skins to embed contents.</description>
@@ -65,8 +65,8 @@
     </scm>
 
     <properties>
-        <jahia-module-signature>MCwCFENXnJ9O/OTOV6LkNeh4f6afeotxAhQThFGvxiSYCzZB5kki7iQdHCnnbA==</jahia-module-signature>
-        <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
+        <jahia-module-signature>MCwCFAiPxbO6dmCWCv0Sfs+sWgWl4ZpmAhQJ/86rAnVodOy7xw1hYc1+w8CV4g==</jahia-module-signature>
+        <jahia.plugin.version>6.9</jahia.plugin.version>
     </properties>
 
     <repositories>
@@ -111,6 +111,16 @@
                     <outputReactorProjects>true</outputReactorProjects>
                     <outputFormat>json</outputFormat>
                     <outputName>java-bom.cdx</outputName>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
                 </configuration>
             </plugin>
         </plugins>
