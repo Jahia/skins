@@ -1,4 +1,5 @@
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<j = 'http://www.jahia.org/jahia/1.0'>
 
 [jmix:skinnable] mixin
  extends = jmix:droppableContent
